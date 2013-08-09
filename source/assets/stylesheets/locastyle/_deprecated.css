@@ -632,4 +632,7 @@ footer#rodape {
   white-space: nowrap;
   display: inline-block  !important;
 }
-.nobold{font-weight: normal!important;}
+
+.nobold {
+  font-weight: normal!important;
+}
