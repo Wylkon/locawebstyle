@@ -2,6 +2,7 @@
 *=require locastyle/_base
 *=require locastyle/_fonts
 *=require locastyle/_shortcutbox
+*=require locastyle/_choosebox
 *=require locastyle/colors/_colors
 *=require locastyle/_buttons
 *=require locastyle/_icons
@@ -19,6 +20,9 @@
 *=require locastyle/_deprecated
 *=require locastyle/_collapse
 *=require locastyle/_mobile
+*=require locastyle/_alerts
+*=require locastyle/_progress
+*=require locastyle/_pagination
 
 *=require locastyle/_select2
 *=require locastyle/_forms
