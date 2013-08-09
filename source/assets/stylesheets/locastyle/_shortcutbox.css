@@ -193,8 +193,8 @@
   }
 .shortcutBox.maxBox h3 a{max-width: none;}
 .shortcutBox.maxBox div h3{
-  font-size: 25px; 
-  padding: 0; 
+  font-size: 25px;
+  padding: 0;
   letter-spacing: -0.6px;
   max-width: 99%;
 }
