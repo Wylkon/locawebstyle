@@ -14,9 +14,29 @@ layout: false
 	</head>
 	<body>
 
+		<div id="toolbar">
+			<div class="limitToolbar">
+				<h1 class="logoToolbar">Central do Cliente</h1>
+				<div id="select_themes" class="menuToolbar formInline">
+					<label for="theme_selector">Selecione o Tema</label>
+					<select id="theme_selector" name="themes">
+						<option value="colorAqua">aqua</option>
+						<option value="colorBlue">blue</option>
+						<option value="colorGreen">green</option>
+						<option value="colorOrange">orange</option>
+						<option value="colorPurple">purple</option>
+						<option value="colorWine">wine</option>
+						<option value="colorNavyBlue">navy_blue</option>
+						<option value="colorLightBlue">light_blue</option>
+						<option value="colorYellow">yellow</option>
+						<option value="colorCyanogen">cyanogen</option>
+					</select>
+				</div>
+			</div>
+		</div>
 
 		<div id="main">
-			<div class="limit">
+			<div class="container">
 
 				<h1>Collapses</h1>
 				<br>
@@ -835,7 +855,7 @@ layout: false
 									Resumo
 								</h1>
 								<div class="innerSideBox boxWhite">
-									<div id="account_settings"> <img alt="" class="fLeft" src="/assets/locastyle/img/cartaoBoleto.png">
+									<div id="account_settings"> <img alt="" class="fLeft" src="/assets/images/cartaoBoleto.png">
 										<span class="dBlock">Incluso no plano</span>
 										<strong class="dBlock">E-mail Business</strong>
 										<hr class="cBoth">
@@ -1674,7 +1694,7 @@ layout: false
 
 
 		<%= javascript_include_tag "libs" %>
-		<%= javascript_include_tag "locastyle" %>
+		<%= javascript_include_tag "locastyle", "manual" %>
 		<script src="<%= base_url + bootstrap_js %>"></script>
 	</body>
 </html>
