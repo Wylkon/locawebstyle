@@ -69,11 +69,17 @@ pre .linenums {
 
 /*** Destacando categoria atual ***/
 .manual_introducao .navbar .nav a[href*="/introducao/"],
+.v1_manual_introducao .navbar .nav a[href*="/introducao/"],
 .manual_formularios .navbar .nav a[href*="/formularios/"],
+.v1_manual_formularios .navbar .nav a[href*="/formularios/"],
 .manual_aplicacoes .navbar .nav a[href*="/aplicacoes/"],
+.v1_manual_aplicacoes .navbar .nav a[href*="/aplicacoes/"],
 .manual_layout .navbar .nav a[href*="/layout/"],
+.v1_manual_layout .navbar .nav a[href*="/layout/"],
 .manual_acessibilidade .navbar .nav a[href*="/acessibilidade/"],
-.manual_componentes .navbar .nav a[href*="/componentes/"] {
+.v1_manual_acessibilidade .navbar .nav a[href*="/acessibilidade/"],
+.manual_componentes .navbar .nav a[href*="/componentes/"],
+.v1_manual_componentes .navbar .nav a[href*="/componentes/"] {
 	color: #555555;
 	text-decoration: none;
 	background-color: #e5e5e5;
@@ -438,7 +444,7 @@ article.text > header {
 	padding-bottom: 30px;
 	border-bottom: 1px solid rgba(0,0,0,0.1);
 }
-.content header h2 {
+.content > header h2 {
 	color: #545454!important;
 	font-size: 0.8em;
 	line-height: 0;
@@ -446,19 +452,19 @@ article.text > header {
 	text-transform: uppercase;
 	vertical-align: top;
 }
-.content header h2:before {
+.content > header h2:before {
 	font-size: 75px !important;
 	top: 12px !important;
 	vertical-align: top !important;
 }
-.content header h1 {
+.content > header h1 {
 	/*margin-left: 84px;*/
     position: relative;
     font-size: 2.5em !important;
     margin-bottom: 5px;
 }
 
-.content header h1 + h3 {
+.content > header h1 + h3 {
     font-size: 1.2em;
     margin-left: 0;
     max-width: 85%;
@@ -539,7 +545,8 @@ article.text > header {
 }
 
 .sidebar ul li a:hover,
-.sidebar ul li a:focus {
+.sidebar ul li a:focus,
+.sidebar ul li a.active {
 	background: #b1d4d7;
 	text-decoration: none;
 }
@@ -601,18 +608,18 @@ article.text > header {
 		font-size: 1.2em;
 		line-height: 1.3em;
 	}
-	.content header h2{font-size: 1.2em;}
+	.content > header h2{font-size: 1.2em;}
 	.channel h3:before{
 		font-size: 80px;
 		top: 10px;
 	}
 	.other-guides li,
-	.content header h3,
-	.content header h1{
+	.content > header h3,
+	.content > header h1{
 		margin-left: 0;
 	}
-	.content header h1{top: -20px;}
-	.content header h2:before{
+	.content > header h1{top: -20px;}
+	.content > header h2:before{
 		font-size: 2em !important;
 		top: -5px !important;
 	}
