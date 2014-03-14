@@ -268,10 +268,11 @@
 	.product-bar
 		background-color: rgba($color2, .9)
 
-		.nav-icons a:before
+		.logo
 			background-color: mix($color2, #333, 90)
 
-	.sidebar-master
+		.nav-icons a:before
+			background-color: mix($color2, #333, 90)
 
 	.sidebar-left
 
@@ -379,3 +380,15 @@
 		.shortcut-title:focus:before
 			background-color: $color1
 			color: #fff
+
+	//
+	// Dropdown de detalhe da conta do usuário
+	//
+	.user-account
+		background-color: mix($color2, #333, 90)
+
+		&:hover
+			background-color: mix($color2, #333, 100)
+
+		> a::before
+			background: $color2 !important
